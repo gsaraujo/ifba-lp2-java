@@ -26,6 +26,9 @@ public class Funcionario extends Pessoa {
     }
 
     public boolean devolverLivroEmprestado() {
+        if(this.quantidadeMaximaDeLivros == Config.QUANTIDADE_LIVROS_FUNCIONARIO) {
+            return false;
+        }
         this.quantidadeMaximaDeLivros++;
         return true;
     }
