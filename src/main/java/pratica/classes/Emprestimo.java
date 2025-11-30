@@ -43,13 +43,13 @@ public class Emprestimo {
         return false;
     }
 
-    public void trocarTipo() {
-        if (this.pessoa instanceof Usuario) {
-            this.pessoa = new Funcionario();
-        }
-
-        this.pessoa = new Usuario();
-    }
+//    public void trocarTipo() {
+//        if (this.pessoa instanceof Usuario) {
+//            this.pessoa = new Funcionario();
+//        }
+//
+//        this.pessoa = new Usuario();
+//    }
 
     @Override
     public String toString() {

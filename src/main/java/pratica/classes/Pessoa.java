@@ -10,7 +10,7 @@ public class Pessoa {
 
     }
 
-    public Pessoa(String matricula, String nome) {
+    public Pessoa(String nome, String matricula) {
         this.matricula = matricula;
         this.nome = nome;
         this.quantidadeMaximaDeLivros = 0;
@@ -32,6 +32,11 @@ public class Pessoa {
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa: " + this.nome + "\nMatricula: " + this.matricula;
     }
 
 

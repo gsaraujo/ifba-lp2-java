@@ -54,18 +54,9 @@ public class Livro {
         return true;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Livro: " + this.titulo + "\nAutor(a): " + this.autor;
+    }
 
 }
-/*
- *
- * [ ] Criar método `realizarEmprestimo()` que:
-
- * [ ] Verifica se `quantidadeDeLivros > 0`
- * [ ] Subtrai 1 de `quantidadeDeLivros`
- * [ ] Criar método `realizarDevolucao()` que:
-
- * [ ] Adiciona 1 a `quantidadeDeLivros`
- */
